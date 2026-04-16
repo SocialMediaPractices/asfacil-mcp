@@ -4,7 +4,8 @@
   "description": "MCP server for live US-Mexico border crossing wait times — San Ysidro, PedWest, Otay Mesa",
   "main": "dist/index.js",
   "bin": {
-    "asfacil-mcp": "dist/index.js"
+    "asfacil-mcp": "dist/src/index.js",
+    "asfacil": "dist/cli/index.js"
   },
   "scripts": {
     "build": "tsc",
