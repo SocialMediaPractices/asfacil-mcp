@@ -1,0 +1,33 @@
+{
+  "name": "@asfacil/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for live US-Mexico border crossing wait times — San Ysidro, PedWest, Otay Mesa",
+  "main": "dist/index.js",
+  "bin": {
+    "asfacil-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "border", "san-ysidro", "tijuana", "wait-times", "cbp"],
+  "author": "Asfacil",
+  "license": "MIT",
+  "homepage": "https://asfacil.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SocialMediaPractices/asfacil-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
